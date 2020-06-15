@@ -1,0 +1,113 @@
+body {
+  background-color: #b6d1fc;
+  overflow-y: auto;
+}
+
+.header {
+  margin-top: 3%;
+  color: #0c1b33;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.animate {
+  animation: typewriter 4s steps(70) 2s 1 both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.line-1 {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.below {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.below .paragraph {
+  width: 500px;
+}
+
+#form-username {
+  margin-left: 10%;
+}
+#form-username input[type=text] {
+  font-size: 30px;
+  background-color: #ccc;
+  width: 70%;
+  border: none;
+  border-radius: 0px;
+  box-shadow: -3px 3px #0c1b33;
+}
+
+#submit {
+  background-color: #0c1b33;
+  color: white;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  background-color: white;
+}
+
+@media (max-width: 800px) {
+  .nav-link {
+    display: none;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 14em;
+    }
+  }
+  #img {
+    width: 350px;
+  }
+
+  #form-username {
+    margin: 5%;
+  }
+  #form-username input[type=text] {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .nav li {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

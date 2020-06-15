@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title> {% block title %}  {% endblock %} | Message County </title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/layout.css') }}">
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap');
+		</style>
+		
+		{% block head %}
+		{% endblock %}
+
+	</head>
+	<body>
+		<div class="container-fluid banner">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar">
+						<span>
+							<a class="navbar-brand" href="{{ url_for('index') }}">
+								<img src="{{url_for('static', filename='img/logo.png')}}" height="50" id="logo">
+							</a>
+							<div class="navbar-brand"></div>
+						</span>
+						<ul class="nav">
+							<img id="bars" src="{{ url_for('static', filename='img/bars.svg') }}">
+							{% block nav %} 
+
+							{% endblock %}
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		{% block body %}
+		{% endblock %}
+
+	</body>
+</html>

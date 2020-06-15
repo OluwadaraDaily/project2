@@ -1,0 +1,33 @@
+body {
+  font-family: "Saira";
+  background-color: #b6d1fc;
+  color: #0c1b33;
+}
+
+.nav img {
+  height: 25px;
+  background-color: #b6d1fc;
+}
+
+.nav li {
+  color: #0c1a26;
+  text-decoration: none;
+}
+
+.nav li:hover {
+  background-color: #0c1a26;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  .nav img {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .nav img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */

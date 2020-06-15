@@ -1,0 +1,70 @@
+body {
+  overflow-y: auto;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#welcome, .form, .channels-list {
+  margin-left: 2%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input[type=text] {
+  font-size: 30px;
+  background-color: #fff;
+  width: 70%;
+  border: none;
+  border-radius: 0px;
+  box-shadow: -3px 3px #0c1b33;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type=submit], button {
+  padding: 10px;
+}
+
+#channels li {
+  text-transform: uppercase;
+  font-size: 20px;
+  background-color: white;
+  padding: 20px 0px;
+  margin-bottom: 5px;
+}
+#channels li a {
+  color: #0c1b33;
+}
+
+@media (max-width: 800px) {
+  #welcome, .form, .channels-list {
+    margin: 0px;
+  }
+
+  #welcome h1 {
+    font-size: 33px;
+  }
+
+  .form h3 {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=channels.css.map */

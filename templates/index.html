@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %} Welcome {% endblock %}
+
+{% block head %}
+	<script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+	<style type="text/css">
+		
+	</style>
+{% endblock %}
+
+{% block nav %}
+	<li class="nav-link"> Home </li>
+	<li class="nav-link"> Channels </li>
+	<li class="nav-link"> Messages </li>
+	<li class="nav-link"> Explore </li>
+{% endblock %}
+
+{% block body %}
+	<div class="header">
+		<h1 class="animate line-1 head">
+			Welcome To Message County.
+		</h1>
+	</div>
+	
+	<center>
+		<img id="img" src="{{ url_for('static', filename='img/index-5.png') }}">
+	</center> <br>
+
+	<form id="form-username">
+		<h3> Input Your Display Name </h3>
+		<input type="text" id="username" class="form-control-lg" name="username">
+		<input type="submit" id="submit" value="GO">
+	</form>
+	
+	
+{% endblock %}
