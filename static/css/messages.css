@@ -75,6 +75,10 @@ input[type=text] {
   input[type=text] {
     width: 83%;
   }
+
+  .one-message p {
+    font-size: 5px;
+  }
 }
 
 /*# sourceMappingURL=messages.css.map */
