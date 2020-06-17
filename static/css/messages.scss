@@ -2,27 +2,27 @@ body {
     height: 100%;
 }
 #channel-name {
-	text-align: center;
-	background-color: white;
-	padding: 10px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
 }
 .message-container {
     width: 97%;
-	margin: 5px 1%;
-	overflow-x: hidden;
-	overflow-y: auto;
-	border: 2px solid #0c1b33;
-	height: 380px;
+    margin: 5px 1%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 2px solid #0c1b33;
+    height: 380px;
 }
 #messages {
-	color: black;
+    color: black;
 }
 
 .one-message {
-	margin-bottom: 20px;
-	background-color: white;
-	padding: 10px;
-	animation-name: hide;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    animation-name: hide;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-play-state: paused;
@@ -52,20 +52,20 @@ body {
     }
 }
 .one-message {
-	p{
+    p{
         line-height: 1.6;
-		font-size: 30px;
-	}
+        font-size: 30px;
+    }
 }
 
 input[type="text"] {
-	padding: 8px 0px;
-	margin-left: 1%;
-	width: 90%;
+    padding: 8px 0px;
+    margin-left: 1%;
+    width: 90%;
 }
 
 #submit {
-	padding: 8px;
+    padding: 8px;
 }
 
 @media (max-width: 800px) {
@@ -75,6 +75,7 @@ input[type="text"] {
     .one-message {
         p{
             line-height: 1.6;
+            width: 100%;
             font-size: 15px;
         }
     }
