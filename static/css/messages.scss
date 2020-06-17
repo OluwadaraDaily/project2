@@ -53,10 +53,8 @@ body {
 }
 .one-message {
 	p{
+        line-height: 1.6;
 		font-size: 30px;
-	}
-	small {
-		font-size: 15px;
 	}
 }
 
@@ -70,17 +68,14 @@ input[type="text"] {
 	padding: 8px;
 }
 
-@media (max-width: 1490px) {
-
-}
-
 @media (max-width: 800px) {
     input[type="text"] {
         width: 83%;
     }
     .one-message {
         p{
-            font-size: 5px;
+            line-height: 1.6;
+            font-size: 15px;
         }
     }
 }

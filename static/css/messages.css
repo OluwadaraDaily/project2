@@ -55,10 +55,8 @@ body {
   }
 }
 .one-message p {
+  line-height: 1.6;
   font-size: 30px;
-}
-.one-message small {
-  font-size: 15px;
 }
 
 input[type=text] {
@@ -77,7 +75,8 @@ input[type=text] {
   }
 
   .one-message p {
-    font-size: 5px;
+    line-height: 1.6;
+    font-size: 15px;
   }
 }
 
