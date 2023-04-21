@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 	// Connect to websocket
-    var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
+    var socket = io.connect(`${location.origin}`);
 
 	//Welcome message
 	const h1 = document.createElement("h1")

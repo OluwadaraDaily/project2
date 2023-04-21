@@ -5,6 +5,7 @@ from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
+print(f'SECRET KEY')
 socketio = SocketIO(app)
 
 c = dict()
