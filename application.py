@@ -70,3 +70,7 @@ def get_all_channels():
 def delete_all_channels():
 	c_list.clear()
 	emit("channels deleted", c_list, broadcast=True)
+	
+
+if __name__ == "__main__":
+  app.run(host='0.0.0.0', port=5000)
